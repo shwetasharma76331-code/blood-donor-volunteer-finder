@@ -1,7 +1,7 @@
-Blood Connect
+#Blood Connect
 Blood Donor & Volunteer Finder
 Blood Connect is a simple web based project designed to help users find blood donors and volunteers when needed.
-Features
+#Features
 1. Find blood donors
 2. Search by blood group
 3. Serch by location
