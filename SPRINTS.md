@@ -43,3 +43,7 @@ Finder project selected
 - SPRINTS.md completed 
 - Project prepared for final submission
 - Github repository updated
+
+## Team 
+- Shweta Sharma 
+- Pari
