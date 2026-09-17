@@ -47,3 +47,6 @@ Finder project selected
 ## Team 
 - Shweta Sharma 
 - Pari
+
+## Goal 
+The goal of Blood Connect is to provide an easy platform for conneting people who need blood with available donors and volunteers.
