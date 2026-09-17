@@ -96,7 +96,16 @@ elif menu == "Volunteer":
     )                                                                                                                                                          
 elif menu == "Register as Donor":
     st.header("Donor Registration")
-    st.write("Register yourself as a blood donor.")
+    st.markdown("""
+    <div class="form-card">
+        <h2>Register as a Blood 
+        Donor</h2>
+                <p>Enter your details
+        to help people who need
+        blood.</p>
+             </div>
+            """,
+    unsafe_allow_html=True)                                                                                                                      
     name = st.text_input("Full Name")
     age = st.number_input(
         "Age",
