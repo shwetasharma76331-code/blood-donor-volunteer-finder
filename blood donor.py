@@ -122,13 +122,13 @@ elif menu == "Register as Donor":
     city = st.text_input("City/Location")
     phone = st.text_input("Phone Number")
 if st.button("Register as Donor"):
-    if name == "":
+      name = st.text_input("Full Name")
       st.error("Please enter your name.")
-    elif blood_group == "Select Blood Group":
+elif blood_group == "Select Blood Group":
         st.error("Please enter your blood group.")
-    elif city == "":
+elif city == "":
         st.error("Please enter your city.")
-    elif phone == "":
+elif phone == "":
         st.error("Please enter your phone number.")
-    else:
+else:
         st.success("Donor registration submitted succesfully.")                     
