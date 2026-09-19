@@ -1,23 +1,46 @@
 import sqlite3
+
+
 def create_database():
     conn = sqlite3.connect("bloodconnect.db")
     cursor = conn.cursor()
+
     cursor.execute("""
-          CREATE TABLE IF NOT
-EXISTS donors(
-               id TEXT NOT NULL,
-KEY AUTOINCREMENT,
-                name TEXT NOT NULL,
-                age INTEGER,
-                blood_group TEXT
-NOT NULL,
-                city TEXT NOT NULL,
-                phone TEXT NOT NULL
-             )
-         """)
+        CREATE TABLE IF NOT EXISTS donors (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            age INTEGER NOT NULL,
+            blood_group TEXT NOT NULL,
+            city TEXT NOT NULL,
+            phone TEXT NOT NULL
+        )
+    """)
+
     conn.commit()
     conn.close()
-if __name__=="__main__":
-    create_database()
+
+
+def add_donor(name, age, blood_group, city, phone):
+    conn = sqlite3.connect("bloodconnect.db")
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        INSERT INTO donors (name, age, blood_group, city, phone)
+        VALUES (?, ?, ?, ?, ?)
+    """, (name, age, blood_group, city, phone))
+
+    conn.commit()
+    conn.close()
+
+
+def get_donors():
+    conn = sqlite3.connect("bloodconnect.db")
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT * FROM donors")
+    donors = cursor.fetchall()
+
+    conn.close()
+    return donors
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
 
