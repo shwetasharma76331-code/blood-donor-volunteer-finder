@@ -146,4 +146,10 @@ elif menu == "Register as Donor":
             st.error("Please enter your phone number.")
 
         else:
-            st.success("Donor registration submitted successfully!")
+            add_donor(
+                name,
+                age,
+                blood_group,
+                phone
+            ) 
+            st.success("Donor registered successfully.")
