@@ -226,4 +226,27 @@ elif menu == "Volunteer":
             st.error("Please enter your phone number.")
 
         else:
-            st.success("Volunteer registered successfully.")                 
+            st.success("Volunteer registered successfully.")  
+elif menu == "About":
+
+    st.header("About BloodConnect")
+
+    st.markdown("""
+    <div class="form-card">
+        <h2>BloodConnect</h2>
+        <p>
+        BloodConnect is a web-based blood donor and volunteer
+        finder application.
+        </p>
+
+        <p>
+        It helps users find suitable blood donors based on
+        blood group and location.
+        </p>
+
+        <p>
+        The project is developed using Python, Streamlit,
+        HTML, CSS and SQLite.
+        </p>
+    </div>
+    """, unsafe_allow_html=True)                           
