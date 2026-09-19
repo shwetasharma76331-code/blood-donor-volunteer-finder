@@ -193,4 +193,32 @@ elif menu == "Find Donor":
                 found = True
 
         if not found:
-            st.warning("No matching donor found.")        
+            st.warning("No matching donor found.")   
+elif menu == "Volunteer":
+
+    st.header("Volunteer Registration")
+
+    st.markdown("""
+    <div class="form-card">
+        <h2>Become a Volunteer</h2>
+        <p>Support blood donation activities in your community.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    name = st.text_input("Volunteer Name")
+    city = st.text_input("Volunteer City")
+    phone = st.text_input("Contact Number")
+
+    if st.button("Register as Volunteer"):
+
+        if name == "":
+            st.error("Please enter your name.")
+
+        elif city == "":
+            st.error("Please enter your city.")
+
+        elif phone == "":
+            st.error("Please enter your phone number.")
+
+        else:
+            st.success("Volunteer registered successfully.")                 
