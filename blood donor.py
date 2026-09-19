@@ -1,4 +1,8 @@
 import streamlit as st
+from database import create_database, add_donor, get_donors
+
+create_database()
+
 st.set_page_config(
     page_title="BloodConnect",
     layout="wide"
@@ -87,7 +91,8 @@ elif menu == "Find Donor":
     st.header("Find a Blood Donor")
     st.info("Donor search feature will be added in Day 5.")
 elif menu == "Register as Donor":
-    st.header("Donor registeration form will be added in Day 3.")
+    st.header("Donor Registeration")
+    name = st.text_input("Enter your name")
 elif menu == "Volunteer":
     st.header("About BloodConnect")
     st.write(
@@ -95,40 +100,50 @@ elif menu == "Volunteer":
         "Pyhton,Streamlit,HTML,and CSS."
     )                                                                                                                                                          
 elif menu == "Register as Donor":
+
     st.header("Donor Registration")
-    st.markdown("""
-    <div class="form-card">
-        <h2>Register as a Blood 
-        Donor</h2>
-                <p>Enter your details
-        to help people who need
-        blood.</p>
-             </div>
-            """,
-    unsafe_allow_html=True)                                                                                                                      
+    st.write("Enter your details to register as a blood donor.")
+
     name = st.text_input("Full Name")
+    
     age = st.number_input(
         "Age",
         min_value=18,
         max_value=65,
         step=1
     )
+
     blood_group = st.selectbox(
         "Blood Group",
-        ["Select Blood Group",
-         "A+","A-","B+","B-",
-         "AB+","AB-","0+","0-"]
+        [
+            "Select Blood Group",
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "AB+",
+            "AB-",
+            "O+",
+            "O-"
+        ]
     )
+
     city = st.text_input("City/Location")
     phone = st.text_input("Phone Number")
-if st.button("Register as Donor"):
-      name = st.text_input("Full Name")
-      st.error("Please enter your name.")
-elif blood_group == "Select Blood Group":
-        st.error("Please enter your blood group.")
-elif city == "":
-        st.error("Please enter your city.")
-elif phone == "":
-        st.error("Please enter your phone number.")
-else:
-        st.success("Donor registration submitted succesfully.")                     
+
+    if st.button("Register as Donor"):
+
+        if name.strip() == "":
+            st.error("Please enter your name.")
+
+        elif blood_group == "Select Blood Group":
+            st.error("Please select your blood group.")
+
+        elif city.strip() == "":
+            st.error("Please enter your city.")
+
+        elif phone.strip() == "":
+            st.error("Please enter your phone number.")
+
+        else:
+            st.success("Donor registration submitted successfully!")
