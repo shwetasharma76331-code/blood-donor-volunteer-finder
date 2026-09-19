@@ -1,5 +1,5 @@
 import streamlit as st
-from database import create_database, add_donor, get_donors
+from database import create_database,add_donor, get_donors
 
 create_database()
 
@@ -145,11 +145,52 @@ elif menu == "Register as Donor":
         elif phone.strip() == "":
             st.error("Please enter your phone number.")
 
-        else:
-            add_donor(
-                name,
-                age,
-                blood_group,
-                phone
-            ) 
-            st.success("Donor registered successfully.")
+        else:  add_donor(
+        name,
+        age,
+        blood_group,
+        city,
+        phone
+    )
+
+        st.success("Donor registered successfully.")
+elif menu == "Find Donor":
+
+    st.header("Find a Blood Donor")
+
+    st.markdown("""
+    <div class="search-card">
+        <h2>Search for Donors</h2>
+        <p>Find registered donors by blood group and city.</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    blood_group = st.selectbox(
+        "Required Blood Group",
+        ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"]
+    )
+
+    city = st.text_input("Enter City")
+
+    if st.button("Search Donor"):
+
+        donors = get_donors()
+
+        found = False
+
+        for donor in donors:
+
+            if donor[3] == blood_group and donor[4].lower() == city.lower():
+
+                st.write("Name:", donor[1])
+                st.write("Age:", donor[2])
+                st.write("Blood Group:", donor[3])
+                st.write("City:", donor[4])
+                st.write("Phone:", donor[5])
+
+                st.divider()
+
+                found = True
+
+        if not found:
+            st.warning("No matching donor found.")        
