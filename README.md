@@ -4,10 +4,9 @@
 
 Blood Connect is a simple web-based project designed to help users find blood donors and volunteers when needed.
 
-## Team Members
+## Project Objective
 
-- **Team Leader:** Shweta Sharma
-- **Team Member:** Pari
+The main objective of Blood Connect is to provide a simple and user-friendly platform where users can register donor information and search for suitable blood donors based on blood group and city.
 
 ## Features
 
@@ -17,8 +16,10 @@ Blood Connect is a simple web-based project designed to help users find blood do
 4. Donor registration
 5. Volunteer registration
 6. Store donor information in a database
-7. Simple and user-friendly interface
-8. HTML and CSS based design
+7. Display donor information
+8. Simple and user-friendly interface
+9. HTML and CSS based design
+10. Streamlit-based web application
 
 ## Technologies Used
 
@@ -33,7 +34,7 @@ Blood Connect is a simple web-based project designed to help users find blood do
 
 The project uses SQLite for storing donor information.
 
-The database contains donor details such as:
+The donor database stores details such as:
 
 - Name
 - Age
@@ -41,7 +42,7 @@ The database contains donor details such as:
 - City
 - Phone Number
 
-The database is managed using `database.py`.
+The database is created and managed using `database.py`.
 
 ## Project Files
 
