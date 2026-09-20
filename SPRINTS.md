@@ -1,52 +1,75 @@
-# Blood Connect - Project 
-Sprints
+# Blood Connect – Project Sprints
 
-## Sprint 1 - Project Setup
-- Project idea finalized
-- Blood Donor & Volunteer
-Finder project selected
-- Github repository created
-- Team members added
-- README.md created
+## Sprint 1 – Project Setup
+- Created the Blood Connect project.
+- Created GitHub repository.
+- Added team members as collaborators.
+- Created README.md and SPRINTS.md files.
+- Set up the Streamlit project structure.
 
-## Sprint 2 - Basic Interface
-- Home page created
-- Blood donor section added
-- Volunteer section added
-- Basic HTML structure developed
+## Sprint 2 – Donor Registration
+- Created donor registration form.
+- Added donor details:
+  - Name
+  - Age
+  - Blood Group
+  - City
+  - Phone Number
+- Added form validation.
 
-## Sprint 3 - HTML & CSS Design
-- HTML pages improved
-- CSS styling added
-- Navigation and buttons designed
-- User-friendly layout created
+## Sprint 3 – Database Integration
+- Created SQLite database.
+- Created bloodconnect.db.
+- Created donors table.
+- Added database functions in database.py.
+- Added functionality to store and retrieve donor records.
 
-## Sprint 4 - Donor Search
-- Blood group search added 
-- Location-based search added
-- Donor information section developed 
+## Sprint 4 – Donor Search
+- Added blood group based donor search.
+- Added city based donor search.
+- Displayed matching donor information.
 
-## Sprint 5 - Volunteer Selection
-- Volunteer registeration section added
-- Volunteer details form created
-- Interface improved
+## Sprint 5 – HTML and CSS Design
+- Added HTML components.
+- Added custom CSS styling.
+- Improved buttons, forms and page layout.
+- Made the interface more attractive and user-friendly.
 
-## Sprint 6 - Testing & Improvements
-- Project tested
-- Error fixed
-- UI improved
-- Features checked
+## Sprint 6 – Streamlit Integration
+- Connected Streamlit with the database.
+- Tested donor registration.
+- Tested donor search.
+- Fixed database and application errors.
+- Improved the user interface.
 
-## Sprint 7 - Final Project
-- Final testing completed 
-- README.md updated
-- SPRINTS.md completed 
-- Project prepared for final submission
-- Github repository updated
+## Sprint 7 – Testing and Debugging
+- Tested all major features.
+- Fixed coding errors.
+- Tested database operations.
+- Checked the application interface.
+- Verified donor data storage and display.
 
-## Team 
-- Shweta Sharma 
+## Sprint 8 – Documentation and Finalization
+- Updated README.md.
+- Updated SPRINTS.md.
+- Updated project files on GitHub.
+- Prepared project presentation.
+- Prepared project report.
+- Prepared the project for final demonstration.
+
+## Future Improvements
+- Add volunteer registration.
+- Add donor availability status.
+- Add location-based donor search.
+- Add login and authentication.
+- Improve database security.
+- Deploy the application online.
+
+## Project Status
+Blood Connect is currently under development.
+The major donor registration, database, search, Streamlit,
+HTML and CSS components have been implemented.
+
+## Team Member 
+- Shweta Sharma
 - Pari
-
-## Goal 
-The goal of Blood Connect is to provide an easy platform for conneting people who need blood with available donors and volunteers.
