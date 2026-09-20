@@ -69,3 +69,6 @@
 Blood Connect is currently under development.
 The major donor registration, database, search, Streamlit,
 HTML and CSS components have been implemented.
+
+## Current Project Progress
+The main development stages of Blood Connect have been completed.
