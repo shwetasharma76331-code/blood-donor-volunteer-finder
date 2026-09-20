@@ -11,6 +11,9 @@ st.set_page_config(
     page_icon="🩸",
     layout="wide"
 )
+st.markdown(
+("<h2>Welcome to Blood Connect</h2>"),
+     unsafe_allow_html=True)
 
 # =========================================================
 # DATABASE
