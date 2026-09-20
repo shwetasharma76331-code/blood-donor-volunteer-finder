@@ -2,11 +2,14 @@ import sqlite3
 DB_NAME = "bloodconnect.db"
 
 
+def get_connection():
+    return
+sqlite3.connect(DB_NAME)
 def create_database():
-    conn = sqlite3.connect(DB_NAME)
-    cursor = conn.cursor()
+ conn = sqlite3.connect(DB_NAME)
+ cursor = conn.cursor()
 
-    cursor.execute("""
+ cursor.execute("""
         CREATE TABLE IF NOT EXISTS donors (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             name TEXT NOT NULL,
@@ -17,9 +20,8 @@ def create_database():
         )
     """)
 
-    conn.commit()
-    conn.close()
-
+ conn.commit()
+ conn.close()
 
 def add_donor(name, age, blood_group, city, phone):
     conn = sqlite3.connect("bloodconnect.db")
