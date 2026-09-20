@@ -69,7 +69,3 @@
 Blood Connect is currently under development.
 The major donor registration, database, search, Streamlit,
 HTML and CSS components have been implemented.
-
-## Team Member 
-- Shweta Sharma
-- Pari
