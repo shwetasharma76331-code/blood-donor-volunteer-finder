@@ -1,23 +1,58 @@
-#Blood Connect
+# Blood Connect
 
+## Blood Donor & Volunteer Finder
 
-#Blood Donor & Volunteer Finder
+Blood Connect is a simple web-based project designed to help users find blood donors and volunteers when needed.
 
-Blood Connect is a simple web based project designed to help users find blood donors and volunteers when needed.
+## Team Members
 
+- **Team Leader:** Shweta Sharma
+- **Team Member:** Pari
 
-  #Features
+## Features
+
 1. Find blood donors
-2. Search by blood group
-3. Serch by location
-4. Volunteer registration
-5. Simple and user-friendly interface
-6. HTML and CSS based design
+2. Search donors by blood group
+3. Search donors by city
+4. Donor registration
+5. Volunteer registration
+6. Store donor information in a database
+7. Simple and user-friendly interface
+8. HTML and CSS based design
 
-#Technologies Used
-1. HTML
-2. CSS
-3. Python
-4. Streamlit
-5. Github
-6. SQLite
+## Technologies Used
+
+1. Python
+2. Streamlit
+3. HTML
+4. CSS
+5. SQLite
+6. GitHub
+
+## Database
+
+The project uses SQLite for storing donor information.
+
+The database contains donor details such as:
+
+- Name
+- Age
+- Blood Group
+- City
+- Phone Number
+
+The database is managed using `database.py`.
+
+## Project Files
+
+```text
+blood-donor-volunteer-finder/
+│
+├── blood_donor.py
+├── database.py
+├── bloodconnect.db
+├── style.css
+├── requirements.txt
+├── README.md
+├── SPRINTS.md
+└── .gitignore
