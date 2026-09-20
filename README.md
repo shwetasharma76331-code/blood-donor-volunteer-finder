@@ -23,12 +23,23 @@ The main objective of Blood Connect is to provide a simple and user-friendly pla
 
 ## Technologies Used
 
-1. Python
-2. Streamlit
-3. HTML
-4. CSS
-5. SQLite
-6. GitHub
+### Python
+Used for application logic and database operations.
+
+### Streamlit
+Used to create the interactive web application interface.
+
+### HTML
+Used to create and structure custom interface elements.
+
+### CSS
+Used to improve the layout, appearance and styling of the application.
+
+### SQLite
+Used to store and manage donor information.
+
+### GitHub
+Used for version control, collaboration and project management.
 
 ## Database
 
