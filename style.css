@@ -135,3 +135,12 @@ button:hover {
     transform: scale(1.02);
     transition: 0.2s ease;
 }
+/* Heading spacing */
+h2 {
+    margin-bottom: 20px;
+}
+/* Form input styling */
+input {
+    border-radius: 8px;
+    padding: 8px;
+}
