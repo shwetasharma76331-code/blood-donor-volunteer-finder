@@ -97,6 +97,14 @@
 .stTextArea textarea {
     border-radius: 8px;
 }
+/* Input Focus Effect */
+.stTextInput input:focus,
+.stNumberInput input:focus,
+.stSelectbox div[data-baseweb="select"]:focus-within,
+.stTextArea textarea:focus {
+    outline: none;
+    border: 2px solid #555;
+}
 
 /* ===== Footer ===== */
 
@@ -138,9 +146,4 @@ button:hover {
 /* Heading spacing */
 h2 {
     margin-bottom: 20px;
-}
-/* Form input styling */
-input {
-    border-radius: 8px;
-    padding: 8px;
 }
