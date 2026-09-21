@@ -1,2 +1,11 @@
 __pycache__/
 *.__pyc
+# SQlite database
+bloodconnect.database
+
+# Python cache
+__pycache__/
+
+# Virtual enviornment
+.venv/
+.venv/
