@@ -55,7 +55,7 @@
 - Updated project files on GitHub.
 - Prepared project presentation.
 - Prepared project report.
-- Prepared the project for final demonstration.
+- Added Blood Connect.pptx to the repository
 
 ## Future Improvements
 - Add volunteer registration.
