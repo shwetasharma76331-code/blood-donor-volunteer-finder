@@ -43,8 +43,8 @@
 - Improved the user interface.
 
 ## Sprint 7 – Testing and Debugging
-- Tested all major features.
-- Fixed coding errors.
+- Tested all major project  features.
+- Fixed remaining errors.
 - Tested database operations.
 - Checked the application interface.
 - Verified donor data storage and display.
