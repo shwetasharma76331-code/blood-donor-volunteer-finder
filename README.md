@@ -60,11 +60,12 @@ The database is created and managed using `database.py`.
 ```text
 blood-donor-volunteer-finder/
 │
-├── blood_donor.py
+├── blood donor.py
 ├── database.py
 ├── bloodconnect.db
 ├── style.css
 ├── requirements.txt
 ├── README.md
 ├── SPRINTS.md
-└── .gitignore
+├── .gitignore
+└── Blood Connect.pptx
